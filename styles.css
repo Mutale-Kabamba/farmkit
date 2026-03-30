@@ -1,0 +1,7 @@
+/* styles.css - Custom styles for FarmKit Modular SPA */
+/* Add any custom styles below. Tailwind covers most needs. */
+
+.sidebar-btn:focus {
+  outline: 2px solid #047857;
+  outline-offset: 2px;
+}
