@@ -1,7 +1,36 @@
-/* styles.css - Custom styles for FarmKit Modular SPA */
-/* Add any custom styles below. Tailwind covers most needs. */
+/* Custom styles for FarmKit Modular SPA */
 
-.sidebar-btn:focus {
-  outline: 2px solid #047857;
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom Scrollbar for a cleaner look in tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8; 
+}
+
+/* Focus states for accessibility */
+button:focus, input:focus, select:focus {
+  outline: 2px solid #10b981;
   outline-offset: 2px;
+}
+
+/* Sidebar Active State */
+.sidebar-btn.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 3px solid #10b981;
 }
